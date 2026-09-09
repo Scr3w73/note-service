@@ -23,3 +23,7 @@ echo "- Создание заметок" >> README.md
 echo "- Редактирование и удаление" >> README.md
 echo "- Поиск по тексту" >> README.md
 echo "- Теги для заметок" >> README.md
+tail -n +2 README.md >> temp_readme.txt
+mv temp_readme.txt README.md
+tail -n +2 README.md >> temp_readme.txt
+mv temp_readme.txt README.md
